@@ -49,6 +49,7 @@ Route::get('/dashboard', 'DashboardController@index');
 Route::resource('/tracking', 'TrackingController');
 Route::get('/trackingsearch', 'TrackingController@trackSearch');
 Route::get('/trackingSearchResult', 'TrackingController@trackSearchResult');
+Route::get('/trackingClientView/{id}', 'TrackingController@trackSearchResultClientView');
 
 //Route::get('/ajax', 'TrackingController@ajax')->name('ajax');
 //Route::get('/tracking', 'TrackingController@index');
@@ -60,7 +61,7 @@ Route::get('/serverSideTracking', [
     'as'   => 'serverSideTracking',
     'uses' => function () {
       //  $tracks = App\Tracking::select('tdn','date','del_address','status');
-        $tracks = App\Tracking::select(['tdn','date','del_address','status']);
+        $tracks = App\Tracking::select(['tdn','refno','date','del_address','status']);
 
         return Datatables::of($tracks)
         ->addColumn('view', '<a href="/tracking/{{$tdn}}" class="btn btn-default">View</a>')

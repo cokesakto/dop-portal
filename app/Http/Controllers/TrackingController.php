@@ -16,7 +16,7 @@ class TrackingController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth', ['except' => ['trackView','trackSearch','trackSearchResult']]);
+        $this->middleware('auth', ['except' => ['trackView','trackSearch','trackSearchResult','trackSearchResultClientView']]);
         
     }
 
@@ -135,9 +135,20 @@ class TrackingController extends Controller
         $search = $request->id;  
        // $trackshdr = Tracking::find($search);
 
-        $trackshdr = Tracking::where('tdn',"{$search}")->get();
+        $trackshdr = Tracking::where('tdn',"{$search}")->orWhere('refno', "{$search}")->get();
                           
 //echo $trackshdr;
         return view('tracking.tracksearchresult')->with('trackshdr',$trackshdr);
+    }
+
+    public function trackSearchResultClientView($id)
+    {
+        $trackshdr = Tracking::find($id);
+       
+        $query = "SELECT path,type from joblist_dtl where tdn='{$id}' order by type desc";
+        $tracksdtl = DB::select($query);
+
+        return view('tracking.tracksearchresultclientview')->with('trackshdr',$trackshdr)->with('tracksdtl', $tracksdtl);
+       // return view('tracking.tracksearchresultclientview');
     }
 }

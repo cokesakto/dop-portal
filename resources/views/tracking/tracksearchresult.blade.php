@@ -6,8 +6,10 @@ if(count($trackshdr)>0){
                     <table class="table table-bordered table-striped " style="width:50%">
                         <thead>
                             <tr>
+                                <th>REFERENCE NO.</th>
                                 <th>TDN</th>
-	                            <th>STATUS</th>
+                                <th>STATUS</th>
+	                            <th>ACTION</th>
                             </tr>
                         </thead>
                         <tbody>';
@@ -15,10 +17,11 @@ if(count($trackshdr)>0){
     foreach ($trackshdr as $tracks){   
    
     $outputbody =  '<tr> 
+                        <td>'.$tracks->refno.'</td>
                         <td>'.$tracks->tdn.'</td>
                         <td>'.$tracks->status.'</td>
+                        <td><a href="/trackingClientView/'.$tracks->tdn.'" class="btn btn-default">View</a></td>
                     </tr>';
-                
     }
 
     $outputtail = ' 	</tbody>

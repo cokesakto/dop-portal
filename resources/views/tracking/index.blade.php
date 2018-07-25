@@ -20,6 +20,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
 
     <script src="https://cdn.datatables.net/buttons/1.5.2/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
     <!-- 
     <script src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.html5.min.js"></script>
     <script src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.colVis.min.js"></script>
@@ -110,21 +111,26 @@
 </nav>    
 
 <div class="container">
-    <table class="datatable mdl-data-table dataTable" cellspacing="0"
-        width="100%" role="grid" 
-        style="width: 100%;">
-        <thead>
-            <tr>
-                <th>TDN</th>
-                <th>DELIVERY DATE</th>
-                <th>ADDRESS</th>
-                <th>STATUS</th>
-                <th>ACTION</th>    
-            </tr>
-        </thead>
-        <tbody>
-        </tbody>
-    </table>
+<div class="row">    
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <table class="datatable mdl-data-table dataTable" cellspacing="0" width="100%" role="grid">
+                <thead>
+                    <tr>
+                        <th>TDN</th>
+                        <th>REFERENCE NO.</th>
+                        <th>ESTIMATE DELIVERY DATE</th>
+                        <th>ADDRESS</th>
+                        <th>STATUS</th>
+                        <th>ACTION</th>    
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>    
+    </div>    
+</div>    
 </div>    
 <!-- <script src="{{ asset('js/app.js') }}"></script> -->
    
@@ -135,17 +141,18 @@
 
           $('.datatable').DataTable({
 
-                "fnRowCallback": function (nRow, aData, iDisplayIndex) {
+              /*  "fnRowCallback": function (nRow, aData, iDisplayIndex) {
 
                     // Bind click event
                     $(nRow).click(function() {
                           window.open('/tracking/'+aData[0],"_self");
                     });
                     return nRow;
-               },
+               },*/
 
                 processing: true,
                 serverSide: true,
+                responsive: true,
             /*dom: 'Bfrtip',
             buttons: [
                 'excelHtml5',
@@ -162,8 +169,8 @@
                          ]
             });
 
-            table.buttons().container()
-            .appendTo( '#example_wrapper .col-sm-6:eq(0)' );
+           /* datatable.buttons().container()
+            .appendTo( '#example_wrapper .col-sm-6:eq(0)' );*/
 
 
     });

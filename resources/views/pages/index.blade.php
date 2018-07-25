@@ -23,8 +23,8 @@
 
                 <div class="panel-body">
 
-                    <label>Search TDN : </label>
-                   	<input type="text" name="txtTdnNumber" id="txtTdnNumber" class="form-control">		
+                    <label>Search Reference No. : </label>
+                   	<input type="text" name="txtRefno" id="txtRefno" class="form-control">		
                   	<br>
 			        <input type="button" name="btnSearch"  id="btnSearch" onclick="fncSearch()" value="Search" class="btn btn-primary">      
 			        <br>
@@ -38,14 +38,19 @@
 
 <script type="text/javascript">
 	function fncSearch(){
-		var txtTdnNumber = $('#txtTdnNumber').val();
-		//alert(txtTdnNumber)
+		var txtRefno = $('#txtRefno').val();
 
-		if(txtTdnNumber!=''){
-			 $.get( "{{ url('trackingSearchResult?id=') }}"+txtTdnNumber, function( data ) {
+		if(txtRefno!=''){
+			 $.get( "{{ url('trackingSearchResult?id=') }}"+txtRefno, function( data ) {
                    $( "#searchResult" ).html( data );  
             });
 		}
 	}
+
+    document.onkeydown = function(){
+    	if(window.event.keyCode=='13'){
+    		fncSearch();
+    	}
+    }
 </script>	
 @endsection
