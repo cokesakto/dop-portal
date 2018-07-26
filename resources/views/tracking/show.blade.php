@@ -18,7 +18,7 @@
                                 <div class="col-md-6">Delivered Date: <b>{!!$trackshdr->modified_datetime!!}</b></div>
                             </div>
                             <div class="row show-grid">
-                                <div class="col-md-6">Estimate Delivery Date : <b>{!!$trackshdr->created_datetime!!}</b></div>
+                                <div class="col-md-6">Estimate Delivery Date : <b>{!!$trackshdr->date!!}</b></div>
                                 <div class="col-md-6">Delivered By : <b>{!!$trackshdr->modified_by!!}</b></div>
                             </div>
                             <div class="row show-grid">
