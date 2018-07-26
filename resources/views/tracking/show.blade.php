@@ -38,14 +38,23 @@
          <div class="col-lg-12">
              <div class="panel panel-default">
                  <div class="panel-body">
-                     <h3 id="grid-column-ordering">Documents</h3>
-                     @if(count($tracksdtl)>0)
-                         @foreach($tracksdtl as $dtl)
-                            <a href="/storage/{{$dtl->path}}" target="new"><img style="height: 200px; width: 200px;background: white" src="/storage/{{$dtl->path}}" alt="..." class="img-thumbnail"></a>
-                         @endforeach 
+
+                    @if(count($tracksdtl)>0)
+                        <input type="button" id="btnShowDocs" name="btnShowDocs" class="btn btn-primary" value="View Documents" onclick="showDocs()">
                      @else
                         <p>No Documents found.</p>    
-                     @endif
+                     @endif  
+
+                     <div id="dvDocs" style="display:none;">
+                         <h3 id="grid-column-ordering">Documents</h3>
+                         @if(count($tracksdtl)>0)
+                             @foreach($tracksdtl as $dtl)
+                                <a href="/storage/{{$dtl->path}}" target="new"><img style="height: 200px; width: 200px;background: white" src="/storage/{{$dtl->path}}" alt="..." class="img-thumbnail"></a>
+                             @endforeach 
+                         @else
+                            <p>No Documents found.</p>    
+                         @endif
+                    </div>
                  </div>
              </div>
          </div>
@@ -55,5 +64,12 @@
              
       
                     
-       @endif              
+       @endif      
+
+       <script type="text/javascript">
+           function showDocs(){
+                $("#dvDocs").show();
+                $("#btnShowDocs").hide();
+           }
+       </script>          
 @endsection 
