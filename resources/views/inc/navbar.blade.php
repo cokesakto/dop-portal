@@ -12,9 +12,10 @@
             </button>
 
             <!-- Branding Image -->
-            <a class="navbar-brand" href="{{ url('/') }}">
+            <img style="height: 50px; width: 90px;background: white;" src="/storage/logo/logo.png" alt="..." class="img-thumbnail" title="{{ config('app.name', 'Laravel') }}">
+            <!-- <a class="navbar-brand" href="{{ url('/') }}">
                 {{ config('app.name', 'Laravel') }}
-            </a>
+            </a> -->
         </div>
 
         <div class="collapse navbar-collapse" id="app-navbar-collapse">
