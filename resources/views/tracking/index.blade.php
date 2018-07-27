@@ -10,17 +10,40 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
-    <link href="https://cdn.datatables.net/1.10.12/css/dataTables.material.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.1.0/material.min.css" rel="stylesheet">
+  <!--   <link href="https://cdn.datatables.net/1.10.12/css/dataTables.material.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/datatables/dataTables.material.min.css') }}" >
+   <!--  <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/dataTables.material.min.css') }}" > -->
+
+
+ <!--    <link href="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.1.0/material.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/material-design-lite/1.1.0/material.min.css') }}" >
+
+
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
-    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.10.12/js/dataTables.material.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+   <!--  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> -->
+    <script type="text/javascript" src="{{ URL::asset('js/jquery-1.11.3.min.js') }}"></script>
 
-    <script src="https://cdn.datatables.net/buttons/1.5.2/js/dataTables.buttons.min.js"></script>
-    <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+    <!-- <script src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script> --> 
+    <script type="text/javascript" src="{{ URL::asset('js/datatable/DataTables-1.10.18/js/jquery.dataTables.min.js') }}"></script>
+
+
+   <!--  <script src="https://cdn.datatables.net/1.10.12/js/dataTables.material.min.js"></script> -->
+    <script type="text/javascript" src="{{ URL::asset('js/datatable/DataTables-1.10.12/js/dataTables.material.min.js') }}"></script>
+
+
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+    <script type="text/javascript" src="{{ URL::asset('js/boostrap/3.3.7/js/bootstrap.min.js') }}"></script>
+
+
+    <!-- <script src="https://cdn.datatables.net/buttons/1.5.2/js/dataTables.buttons.min.js"></script> --> 
+
+
+    <!-- <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>   -->
+    <script type="text/javascript" src="{{ URL::asset('js/datatable/Responsive-2.2.2/js/dataTables.responsive.min.js') }}"></script>
+
+
+
     <!-- 
     <script src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.html5.min.js"></script>
     <script src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.colVis.min.js"></script>
