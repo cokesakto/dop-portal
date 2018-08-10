@@ -1,0 +1,293 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/wms_v2/!svn/ver/148/TRUNK/app/webroot/js/kendoui
+END
+kendo.panelbar.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/wms_v2/!svn/ver/4/TRUNK/app/webroot/js/kendoui/kendo.panelbar.min.js
+END
+kendo.editor.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/wms_v2/!svn/ver/4/TRUNK/app/webroot/js/kendoui/kendo.editor.min.js
+END
+kendo.imagebrowser.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/wms_v2/!svn/ver/4/TRUNK/app/webroot/js/kendoui/kendo.imagebrowser.min.js
+END
+kendo.tooltip.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/wms_v2/!svn/ver/4/TRUNK/app/webroot/js/kendoui/kendo.tooltip.min.js
+END
+kendo.multiselect.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/wms_v2/!svn/ver/4/TRUNK/app/webroot/js/kendoui/kendo.multiselect.min.js
+END
+kendo.datetimepicker.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/wms_v2/!svn/ver/4/TRUNK/app/webroot/js/kendoui/kendo.datetimepicker.min.js
+END
+kendo.treeview.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/wms_v2/!svn/ver/4/TRUNK/app/webroot/js/kendoui/kendo.treeview.min.js
+END
+kendo.mobile.scroller.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/wms_v2/!svn/ver/4/TRUNK/app/webroot/js/kendoui/kendo.mobile.scroller.min.js
+END
+kendo.pager.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/wms_v2/!svn/ver/4/TRUNK/app/webroot/js/kendoui/kendo.pager.min.js
+END
+kendo.popup.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/wms_v2/!svn/ver/4/TRUNK/app/webroot/js/kendoui/kendo.popup.min.js
+END
+kendo.binder.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/wms_v2/!svn/ver/4/TRUNK/app/webroot/js/kendoui/kendo.binder.min.js
+END
+kendo.userevents.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/wms_v2/!svn/ver/4/TRUNK/app/webroot/js/kendoui/kendo.userevents.min.js
+END
+kendo.listview.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/wms_v2/!svn/ver/4/TRUNK/app/webroot/js/kendoui/kendo.listview.min.js
+END
+kendo.splitter.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/wms_v2/!svn/ver/4/TRUNK/app/webroot/js/kendoui/kendo.splitter.min.js
+END
+kendo.window.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/wms_v2/!svn/ver/4/TRUNK/app/webroot/js/kendoui/kendo.window.min.js
+END
+kendo.data.xml.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/wms_v2/!svn/ver/4/TRUNK/app/webroot/js/kendoui/kendo.data.xml.min.js
+END
+kendo.editable.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/wms_v2/!svn/ver/4/TRUNK/app/webroot/js/kendoui/kendo.editable.min.js
+END
+kendo.data.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/wms_v2/!svn/ver/4/TRUNK/app/webroot/js/kendoui/kendo.data.min.js
+END
+kendo.filtermenu.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/wms_v2/!svn/ver/4/TRUNK/app/webroot/js/kendoui/kendo.filtermenu.min.js
+END
+kendo.list.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/wms_v2/!svn/ver/4/TRUNK/app/webroot/js/kendoui/kendo.list.min.js
+END
+kendo.datepicker.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/wms_v2/!svn/ver/4/TRUNK/app/webroot/js/kendoui/kendo.datepicker.min.js
+END
+kendo.sortable.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/wms_v2/!svn/ver/4/TRUNK/app/webroot/js/kendoui/kendo.sortable.min.js
+END
+kendo.colorpicker.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/wms_v2/!svn/ver/4/TRUNK/app/webroot/js/kendoui/kendo.colorpicker.min.js
+END
+kendo.fx.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/wms_v2/!svn/ver/4/TRUNK/app/webroot/js/kendoui/kendo.fx.min.js
+END
+kendo.resizable.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/wms_v2/!svn/ver/4/TRUNK/app/webroot/js/kendoui/kendo.resizable.min.js
+END
+jquery.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/wms_v2/!svn/ver/4/TRUNK/app/webroot/js/kendoui/jquery.min.js
+END
+kendo.numerictextbox.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/wms_v2/!svn/ver/4/TRUNK/app/webroot/js/kendoui/kendo.numerictextbox.min.js
+END
+kendo.upload.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/wms_v2/!svn/ver/4/TRUNK/app/webroot/js/kendoui/kendo.upload.min.js
+END
+kendo.validator.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/wms_v2/!svn/ver/4/TRUNK/app/webroot/js/kendoui/kendo.validator.min.js
+END
+kendo.draganddrop.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/wms_v2/!svn/ver/4/TRUNK/app/webroot/js/kendoui/kendo.draganddrop.min.js
+END
+kendo.grid.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/wms_v2/!svn/ver/4/TRUNK/app/webroot/js/kendoui/kendo.grid.min.js
+END
+kendo.reorderable.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/wms_v2/!svn/ver/4/TRUNK/app/webroot/js/kendoui/kendo.reorderable.min.js
+END
+kendo.tabstrip.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/wms_v2/!svn/ver/4/TRUNK/app/webroot/js/kendoui/kendo.tabstrip.min.js
+END
+kendo.dropdownlist.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/wms_v2/!svn/ver/4/TRUNK/app/webroot/js/kendoui/kendo.dropdownlist.min.js
+END
+kendo.core.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/wms_v2/!svn/ver/4/TRUNK/app/webroot/js/kendoui/kendo.core.min.js
+END
+kendo.timepicker.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/wms_v2/!svn/ver/4/TRUNK/app/webroot/js/kendoui/kendo.timepicker.min.js
+END
+kendo.data.odata.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/wms_v2/!svn/ver/4/TRUNK/app/webroot/js/kendoui/kendo.data.odata.min.js
+END
+kendo.autocomplete.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/wms_v2/!svn/ver/4/TRUNK/app/webroot/js/kendoui/kendo.autocomplete.min.js
+END
+kendo.selectable.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/wms_v2/!svn/ver/4/TRUNK/app/webroot/js/kendoui/kendo.selectable.min.js
+END
+kendo.menu.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/wms_v2/!svn/ver/4/TRUNK/app/webroot/js/kendoui/kendo.menu.min.js
+END
+kendo.combobox.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/wms_v2/!svn/ver/4/TRUNK/app/webroot/js/kendoui/kendo.combobox.min.js
+END
+kendo.calendar.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/wms_v2/!svn/ver/4/TRUNK/app/webroot/js/kendoui/kendo.calendar.min.js
+END
+kendo.view.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/wms_v2/!svn/ver/4/TRUNK/app/webroot/js/kendoui/kendo.view.min.js
+END
+kendo.web.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/wms_v2/!svn/ver/4/TRUNK/app/webroot/js/kendoui/kendo.web.min.js
+END
+kendo.router.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/wms_v2/!svn/ver/4/TRUNK/app/webroot/js/kendoui/kendo.router.min.js
+END
+kendo.groupable.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/wms_v2/!svn/ver/4/TRUNK/app/webroot/js/kendoui/kendo.groupable.min.js
+END
+kendo.slider.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/wms_v2/!svn/ver/4/TRUNK/app/webroot/js/kendoui/kendo.slider.min.js
+END
+kendo.columnmenu.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/wms_v2/!svn/ver/4/TRUNK/app/webroot/js/kendoui/kendo.columnmenu.min.js
+END
