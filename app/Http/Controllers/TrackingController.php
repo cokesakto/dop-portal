@@ -64,17 +64,29 @@ class TrackingController extends Controller
      */
     public function show($id)
     {
+        $role = auth()->user()->role;
+        $company_code = auth()->user()->company_code;
+
         $trackshdr = Tracking::find($id);
-        //return view('tracking.show')->with('tracks',$tracks);
+        if($role==config('constants.role_trucking') and $company_code==$trackshdr->truckercode){
 
-       
-        $query = "SELECT path from joblist_dtl where tdn='{$id}' order by type desc";
-        $tracksdtl = DB::select($query);
+            $query = "SELECT path from joblist_dtl where tdn='{$id}' order by type desc";
+            $tracksdtl = DB::select($query);
 
-      //x  return $tracksdtl = TrackingDetails::find($id);
+            return view('tracking.show')->with('trackshdr',$trackshdr)->with('tracksdtl', $tracksdtl);
 
-      //  return view('tracking.show')->with('trackshdr',$trackshdr)->with('tracksdtl', $tracksdtl);
-        return view('tracking.show')->with('trackshdr',$trackshdr)->with('tracksdtl', $tracksdtl);
+        }else if($role==config('constants.role_admin') or $role==config('constants.role_dispatching')){
+
+            $query = "SELECT path from joblist_dtl where tdn='{$id}' order by type desc";
+            $tracksdtl = DB::select($query);
+
+            return view('tracking.show')->with('trackshdr',$trackshdr)->with('tracksdtl', $tracksdtl);
+        }else{
+
+            return view('tracking.showerror')->with('error','Unauthorized Access');
+
+        }
+        
     }
 
     /**
@@ -111,16 +123,16 @@ class TrackingController extends Controller
         //
     }
 
-    public function ajax()
+  /*  public function ajax()
     {
         return view('tracking.ajax-index');
-    }
+    }*/
 
-    public function index2()
+/*    public function index2()
     {
         $tracks = Tracking::all();
         return view('tracking.index2')->with('tracks',$tracks);
-    }
+    }*/
 
     public function trackSearch()
     {
@@ -136,8 +148,7 @@ class TrackingController extends Controller
        // $trackshdr = Tracking::find($search);
 
         $trackshdr = Tracking::where('tdn',"{$search}")->orWhere('refno', "{$search}")->get();
-                          
-//echo $trackshdr;
+
         return view('tracking.tracksearchresult')->with('trackshdr',$trackshdr);
     }
 
@@ -149,6 +160,5 @@ class TrackingController extends Controller
         $tracksdtl = DB::select($query);
 
         return view('tracking.tracksearchresultclientview')->with('trackshdr',$trackshdr)->with('tracksdtl', $tracksdtl);
-       // return view('tracking.tracksearchresultclientview');
     }
 }

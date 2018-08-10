@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\DB;
 class APIController extends Controller
 {
 
-    public function getTracks()
+  /*  public function getTracks()
     {
 
        // $query = Tracking::select('tdn', 'date');
@@ -17,6 +17,6 @@ class APIController extends Controller
 
 
         return datatables(User::query('select * from joblist_hdr where 1'))->toJson();
-    }
+    }*/
 
 }
